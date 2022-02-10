@@ -1,0 +1,95 @@
+.container{
+    display: flex;
+    width: 100fr;
+    height: 97vh;
+	margin-top: 1vh;
+    margin-left: 2vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 24%;
+    height: 48vh;
+    border: 3px solid black;
+    display: grid;
+    grid-template-areas: 
+        "cabecalho"
+        "conteudo"
+        "rodape"
+        "sidebar_esq"
+        "sidebar_dir";
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+.cabecalho {
+    background:red;
+    grid-area: cabecalho;
+    grid-area: 1 / 1 / 3 / 11
+}
+
+.conteudo {
+    background:blue;
+    grid-area: conteudo;
+    grid-area: 3 / 1 / 11 / 11
+}
+
+#cont2 {
+    grid-row-end: 10;
+}
+
+.rodape {
+    background:pink;
+    grid-area: rodape;
+    grid-area: 10 / 1 / 11 / 11
+}
+
+.sidebar_esq {
+    background:orange;
+    grid-area: sidebar_esq;
+    grid-area: 1 / 1 / 11 / 3
+}
+
+.sidebar_dir {
+    background:orange;
+    grid-area: sidebar_dir;
+    grid-area: 1 / 9 / 11 / 11
+}
+
+#cont3 {
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+
+#cont4 {
+    grid-area: 1 / 3 / 11 / 9
+}
+
+#cont5 {
+    grid-area: 3 / 3 / 11 / 11
+}
+
+#sd_esq5 {
+    grid-row-start: 3;
+}
+
+#cont6 {
+    grid-area: 3 / 3 / 11 / 9
+}
+
+#sd_dir6 {
+    grid-row-start: 3;
+}
+
+#sd_esq7 {
+    grid-area: 3 / 1 / 10 / 3
+}
+
+#sd_dir8 {
+    grid-area: 3 / 9 / 10 / 11
+}
+
+
+
+
